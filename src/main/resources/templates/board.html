@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+  <script src="tictactoe.js" th:src="@{/js/gameoffour.js}"></script>
+</head>
+
+<body>
+<p th:utext="${currentPlayerString}">Welcome player</p>
+<input type="hidden" th:value="${currentPlayer}" id="currentPlayer"> </input> 
+<div id="connectboard"></div>
+</body>
+</html>
